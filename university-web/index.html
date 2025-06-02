@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية</title>
+    <!-- تضمين Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* تنسيق الحاوية الرئيسية */
+        body {
+            background-color: #1f0761; /* لون الخلفية (يمكن تغييره) */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .home-container {
+            text-align: center;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fbf8ff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* عنوان الترحيب */
+        .home-container h1 {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        /* الفقرة التعريفية */
+        .home-container p {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        /* تنسيق الروابط */
+        .home-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .home-link {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
+            font-weight: bold;
+        }
+
+        .home-link.secondary {
+            background-color: #6c757d;
+        }
+
+        .home-link:hover {
+            background-color: #2980b9;
+        }
+
+        .home-link.secondary:hover {
+            background-color: #5a6268;
+        }
+
+        /* قسم المعلومات */
+        .home-info {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .home-info h2 {
+            color: #2c3e50;
+            font-size: 20px;
+        }
+
+        .home-info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .home-info li {
+            font-size: 16px;
+            color: #333;
+            padding: 5px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .home-info li:last-child {
+            border-bottom: none;
+        }
+
+        /* تحسين استجابة الصفحة */
+        @media (max-width: 768px) {
+            .home-container {
+                width: 90%; /* جعل العرض يتناسب مع الشاشات الصغيرة */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- محتوى الصفحة -->
+    <div class="home-container">
+        <!-- عنوان الترحيب -->
+        <h1>مرحباً بك في نظام القبول الجامعي</h1>
+        <p>نظام سهل الاستخدام لتقديم طلبات القبول في الجامعات والتخصصات المتاحة. ابدأ بتسجيل الدخول أو إنشاء حساب جديد.</p>
+
+        <!-- روابط تسجيل الدخول وإنشاء الحساب -->
+        <div class="home-links">
+            <a href="login.php" class="home-link">تسجيل الدخول</a>
+            <a href="register.php" class="home-link">إنشاء حساب</a>
+            <a href="faq.html" class="home-link ">الأسئلة الشائعة</a>
+        </div>
+
+        <!-- قسم المعلومات -->
+        <div class="home-info">
+            <h2>معلومات عن الجامعات والتخصصات المتاحة</h2>
+            <ul>
+                <li>جامعة الملك سعود - تخصصات متعددة</li>
+                <li>جامعة الأميرة نورة - تخصصات علمية وإنسانية</li>
+                <li>جامعة الشارقة - تخصصات أكاديمية متنوعة</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- تضمين Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
